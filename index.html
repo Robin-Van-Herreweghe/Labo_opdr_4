@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>  <!-- opening tag -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/myScript.js" ></script>
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <title> Temperatuur uitlezing </title>
+    </head>
+
+    <body>        
+        <div id="form">
+            <form method="POST">
+                <div class="form-group">
+                    <label for="Tijd">Tijd:</label>
+                    <input class="form-control" name="Tijd">
+                </div>
+                <div class="form-group">
+                    <label for="Temp">Temperatuur:</label>
+                    <input class="form-control" name="Temp">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+        <table id="Table1">
+            <tr>
+                <th>Temperatuur</th>
+                <th>Datum</th>
+            </tr>
+        </table>
+        <div id="Grafiek"></canvas>
+
+    </body>
+</html>  <!-- closing tag -->
